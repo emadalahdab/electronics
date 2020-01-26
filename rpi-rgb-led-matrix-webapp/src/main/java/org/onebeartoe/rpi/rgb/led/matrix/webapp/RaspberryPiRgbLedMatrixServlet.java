@@ -141,8 +141,9 @@ public abstract class RaspberryPiRgbLedMatrixServlet extends HttpServlet
         //      https://www.adafruit.com/products/1484
         //      https://www.adafruit.com/products/2345
         //
-        String [] commandLineFlags = {"--led-no-hardware-pulse", 
-                                      "--led-gpio-mapping=adafruit-hat"};
+        /*String [] commandLineFlags = {"--led-no-hardware-pulse", 
+                                      "--led-gpio-mapping=adafruit-hat"};*/
+        String [] commandLineFlags = {"--led-cols=64"};
         
         ledMatrix.setCommandLineFlags(commandLineFlags);
         

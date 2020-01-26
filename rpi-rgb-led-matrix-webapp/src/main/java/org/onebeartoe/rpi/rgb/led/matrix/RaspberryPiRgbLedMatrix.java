@@ -154,7 +154,7 @@ public class RaspberryPiRgbLedMatrix implements Serializable
             Thread.currentThread().interrupt();
         }
         
-        String execuableParent = rpiRgbLedMatrixHome + "/python/samples/";
+        String execuableParent = rpiRgbLedMatrixHome + "/bindings/python/samples/";
         File workingDir = new File(execuableParent);
         String executable = execuableParent + "runtext.py";
         
